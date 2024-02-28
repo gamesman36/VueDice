@@ -10,6 +10,12 @@
     <div id="app" v-cloak>
         <p><img :src="'die' + die1 + '.png'"> <img :src="'die' + die2 + '.png'"></p>
         <p><button @click="rollDice()">Roll</button></p>
+        <p>Ones: {{ ones }} ({{ totalRolls ? percentages.ones.toFixed(2) + '%' : '0%' }})</p>
+        <p>Deuces: {{ deuces }} ({{ totalRolls ? percentages.deuces.toFixed(2) + '%' : '0%' }})</p>
+        <p>Threes: {{ threes }} ({{ totalRolls ? percentages.threes.toFixed(2) + '%' : '0%' }})</p>
+        <p>Fours: {{ fours }} ({{ totalRolls ? percentages.fours.toFixed(2) + '%' : '0%' }})</p>
+        <p>Fives: {{ fives }} ({{ totalRolls ? percentages.fives.toFixed(2) + '%' : '0%' }})</p>
+        <p>Sixes: {{ sixes }} ({{ totalRolls ? percentages.sixes.toFixed(2) + '%' : '0%' }})</p>
     </div>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="app.js"></script>
